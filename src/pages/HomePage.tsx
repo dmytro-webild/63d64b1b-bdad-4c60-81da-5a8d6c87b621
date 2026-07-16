@@ -69,7 +69,7 @@ export default function HomePage() {
   <div id="services" data-section="services">
     <SectionErrorBoundary name="services">
           <FeaturesTaggedCards
-      tag="Core Services"
+      tag="Our Services"
       title="Dispatch Services"
       description="Professional support for every aspect of your fleet operations."
       items={[
