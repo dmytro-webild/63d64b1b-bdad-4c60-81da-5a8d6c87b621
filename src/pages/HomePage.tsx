@@ -37,7 +37,7 @@ export default function HomePage() {
     <SectionErrorBoundary name="partners">
           <SocialProofMarquee
       tag="Our Partners"
-      title="Trusted by Top Carriers"
+      title="Trusted by Carriers"
       description="We are proud to partner with leading logistics companies to drive excellence."
       names={[
         "Mansur Logistics Inc",
