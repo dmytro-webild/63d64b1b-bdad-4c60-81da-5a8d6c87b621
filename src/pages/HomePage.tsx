@@ -112,7 +112,7 @@ export default function HomePage() {
   <div id="process" data-section="process">
     <SectionErrorBoundary name="process">
           <FeaturesRevealCardsBento
-      tag="Process"
+      tag="Why Choose Us"
       title="Our Dispatch Workflow"
       description="A streamlined approach to efficient logistics."
       items={[
