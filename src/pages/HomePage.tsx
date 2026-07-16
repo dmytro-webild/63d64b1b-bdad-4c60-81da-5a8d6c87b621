@@ -172,20 +172,20 @@ export default function HomePage() {
       description="Real-time metrics showing our dispatch impact."
       metrics={[
         {
-          value: "127",
-          description: "Loads Booked Weekly",
+          value: "$56,794",
+          description: "Weekly Revenue",
         },
         {
-          value: "42,350",
-          description: "Miles Planned",
+          value: "$8,564",
+          description: "Avg. Per Truck",
         },
         {
-          value: "31",
-          description: "Active Drivers",
+          value: "$56,794 ",
+          description: "Weekly Revenue",
         },
         {
-          value: "24/7",
-          description: "Operational Status",
+          value: "30+",
+          description: "Weekly Revenue",
         },
       ]}
       textAnimation="slide-up"
