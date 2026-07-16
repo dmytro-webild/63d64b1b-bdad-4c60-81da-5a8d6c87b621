@@ -172,7 +172,7 @@ export default function HomePage() {
       description="Real-time metrics showing our dispatch impact."
       metrics={[
         {
-          value: "$56,794",
+          value: "$8,468",
           description: "Weekly Revenue",
         },
         {
@@ -180,7 +180,7 @@ export default function HomePage() {
           description: "Avg. Per Truck",
         },
         {
-          value: "$56,794 ",
+          value: "$8,468",
           description: "Weekly Revenue",
         },
         {
