@@ -56,7 +56,7 @@ export default function HomePage() {
   <div id="about" data-section="about">
     <SectionErrorBoundary name="about">
           <AboutTestimonial
-      tag="Mission Driven"
+      tag="Our Story"
       quote="To provide honest, transparent, and professional dispatch services while maximizing every carrier's profitability and building lasting partnerships."
       author="United Team Founders"
       role="Operational Excellence"
