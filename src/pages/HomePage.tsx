@@ -71,7 +71,7 @@ export default function HomePage() {
           <FeaturesTaggedCards
       tag="Our Services"
       title="Dispatch Services"
-      description="Professional support for every aspect of your fleet operations."
+      description="We specialize in Amazon Relay dispatch services throughout the United States, combining market expertise and exceptional communication."
       items={[
         {
           tag: "Relay",
