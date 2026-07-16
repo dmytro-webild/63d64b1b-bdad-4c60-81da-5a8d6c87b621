@@ -114,7 +114,7 @@ export default function HomePage() {
           <FeaturesRevealCardsBento
       tag="Why Choose Us"
       title="Our Dispatch Workflow"
-      description="A streamlined approach to efficient logistics."
+      description="Drivers trust United Team because we focus on higher rates, honest communication, and professional support."
       items={[
         {
           title: "Carrier Onboarding",
