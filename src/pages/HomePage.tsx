@@ -16,7 +16,7 @@ export default function HomePage() {
   <div id="hero" data-section="hero">
     <SectionErrorBoundary name="hero">
           <HeroBillboard
-      tag="Trusted Carrier Partner"
+      tag="United Team Logistics"
       title="Professional Amazon Relay Dispatch Services Across the United States"
       description="United Team provides reliable 24/7 Amazon Relay dispatch services, helping carriers and owner-operators maximize revenue through strategic load planning, route optimization, rate negotiation, and dedicated support."
       primaryButton={{
