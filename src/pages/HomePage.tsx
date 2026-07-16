@@ -57,9 +57,9 @@ export default function HomePage() {
     <SectionErrorBoundary name="about">
           <AboutTestimonial
       tag="Our Story"
-      quote="To provide honest, transparent, and professional dispatch services while maximizing every carrier's profitability and building lasting partnerships."
+      quote="Founded on October 1, 2023, United Team was built with one mission: to deliver honest, transparent, and professional dispatch services that help carriers succeed."
       author="United Team Founders"
-      role="Operational Excellence"
+      role="Management Team"
       imageSrc="http://img.b2bpic.net/free-photo/young-woman-wearing-trucker-hat_23-2149432362.jpg"
       textAnimation="slide-up"
     />
