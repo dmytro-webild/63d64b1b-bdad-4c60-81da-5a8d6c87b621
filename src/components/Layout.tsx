@@ -1,5 +1,5 @@
 import FooterMinimal from '@/components/sections/footer/FooterMinimal';
-import NavbarFloatingLogo from '@/components/ui/NavbarFloatingLogo';
+import NavbarPremium from '@/components/custom/NavbarPremium';
 import SectionErrorBoundary from "@/components/ui/SectionErrorBoundary";
 import SiteBackgroundSlot from "@/components/ui/SiteBackgroundSlot";
 import { Instagram, Send, MessageCircle } from "lucide-react";
@@ -21,24 +21,8 @@ export default function Layout() {
     "href": "#services"
   },
   {
-    "name": "Process",
+    "name": "Benefits",
     "href": "#process"
-  },
-  {
-    "name": "Operations",
-    "href": "#operations"
-  },
-  {
-    "name": "Team",
-    "href": "#team"
-  },
-  {
-    "name": "Office",
-    "href": "#office"
-  },
-  {
-    "name": "Partners",
-    "href": "#partners"
   },
   {
     "name": "Testimonials",
@@ -58,11 +42,10 @@ export default function Layout() {
     <StyleProvider buttonVariant="magnetic" siteBackground="floatingGradient" heroBackground="cornerGlow">
       <SiteBackgroundSlot />
       <SectionErrorBoundary name="navbar">
-        <NavbarFloatingLogo
-      logo="United Team"
+        <NavbarPremium
       logoImageSrc="https://picsum.photos/seed/logoimagesrc/800/600"
       ctaButton={{
-        text: "GET STARTED",
+        text: "Get Started",
         href: "#contact",
       }}
      navItems={navItems} />
