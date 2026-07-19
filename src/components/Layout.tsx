@@ -43,7 +43,7 @@ export default function Layout() {
       <SiteBackgroundSlot />
       <SectionErrorBoundary name="navbar">
         <NavbarPremium
-      logoImageSrc="https://picsum.photos/seed/logoimagesrc/800/600"
+      logoImageSrc="https://storage.googleapis.com/webild/users/user_3GRpdvQoJFjolu5kC3kYNdQAvbt/uploaded-1784463454654-a2x049hk.png"
       ctaButton={{
         text: "Get Started",
         href: "#contact",
