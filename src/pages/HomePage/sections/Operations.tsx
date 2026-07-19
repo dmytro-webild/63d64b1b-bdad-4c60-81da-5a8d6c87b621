@@ -8,7 +8,7 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 const metrics = [
   {
     value: "30+",
-    description: "Professional Dispatchers"
+    description: "Active Drivers"
   },
   {
     value: "$9,999",
@@ -16,11 +16,11 @@ const metrics = [
   },
   {
     value: "30+",
-    description: "Professional Dispatchers"
+    description: "Active Drivers"
   },
   {
     value: "16 ",
-    description: "Professional Dispatchers"
+    description: "Active Drivers"
   }
 ];
 
