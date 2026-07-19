@@ -136,9 +136,9 @@ export default function Layout() {
               </p>
               <div className="flex items-center gap-4 text-sm text-accent">
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-cta transition-colors duration-300">Instagram</a>
-                <span>•</span>
+                <span></span>
                 <a href="https://t.me/un1tedteam" target="_blank" rel="noopener noreferrer" className="hover:text-primary-cta transition-colors duration-300">Telegram</a>
-                <span>•</span>
+                <span></span>
                 <a href="https://wa.me/UT1TemurIsmatov" target="_blank" rel="noopener noreferrer" className="hover:text-primary-cta transition-colors duration-300">WhatsApp</a>
               </div>
             </div>
