@@ -2,7 +2,7 @@ import FooterMinimal from '@/components/sections/footer/FooterMinimal';
 import NavbarFloatingLogo from '@/components/ui/NavbarFloatingLogo';
 import SectionErrorBoundary from "@/components/ui/SectionErrorBoundary";
 import SiteBackgroundSlot from "@/components/ui/SiteBackgroundSlot";
-import { Instagram, Send } from "lucide-react";
+import { Instagram, Send, MessageCircle } from "lucide-react";
 import { Outlet } from 'react-router-dom';
 import { StyleProvider } from "@/components/ui/StyleProvider";
 
