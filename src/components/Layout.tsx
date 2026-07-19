@@ -1,5 +1,6 @@
 import FooterMinimal from '@/components/sections/footer/FooterMinimal';
 import NavbarPremium from '@/components/custom/NavbarPremium';
+import ContactModal from '@/components/custom/ContactModal';
 import SectionErrorBoundary from "@/components/ui/SectionErrorBoundary";
 import SiteBackgroundSlot from "@/components/ui/SiteBackgroundSlot";
 import { Instagram, Send, MessageCircle } from "lucide-react";
@@ -46,13 +47,14 @@ export default function Layout() {
       logoImageSrc="https://storage.googleapis.com/webild/users/user_3GRpdvQoJFjolu5kC3kYNdQAvbt/uploaded-1784463454654-a2x049hk.png"
       ctaButton={{
         text: "Get Started",
-        href: "#contact",
+        href: "#contact-modal",
       }}
      navItems={navItems} />
       </SectionErrorBoundary>
       <main className="flex-grow">
         <Outlet />
       </main>
+      <ContactModal />
       <SectionErrorBoundary name="footer">
         <footer className="w-full bg-background py-12 border-t border-border mt-auto">
           <div className="w-content-width mx-auto">
