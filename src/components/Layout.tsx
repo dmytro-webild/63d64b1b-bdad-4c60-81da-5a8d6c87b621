@@ -83,7 +83,7 @@ export default function Layout() {
                   {["Home", "About", "Services", "FAQ", "Contact"].map((item) => (
                     <a
                       key={item}
-                      href={`#${item.toLowerCase()}`}
+                      href={`#${item === "Home" ? "hero" : item.toLowerCase()}`}
                       className="text-accent hover:text-primary-cta transition-colors duration-300 text-sm w-fit"
                     >
                       {item}
