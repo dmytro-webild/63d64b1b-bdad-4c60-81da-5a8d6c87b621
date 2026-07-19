@@ -47,7 +47,7 @@ export default function Layout() {
       logoImageSrc="https://storage.googleapis.com/webild/users/user_3GRpdvQoJFjolu5kC3kYNdQAvbt/uploaded-1784463454654-a2x049hk.png"
       ctaButton={{
         text: "Get Started",
-        href: "#contact-modal",
+        href: "#contact",
       }}
      navItems={navItems} />
       </SectionErrorBoundary>
