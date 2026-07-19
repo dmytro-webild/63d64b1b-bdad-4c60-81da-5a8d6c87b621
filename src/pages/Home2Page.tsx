@@ -1,119 +1,83 @@
-import { routes } from "@/routes";
-import NavbarCentered from "@/components/ui/NavbarCentered";
 import HeroSplit from "@/components/sections/hero/HeroSplit";
 import FeaturesMediaGrid from "@/components/sections/features/FeaturesMediaGrid";
 import TestimonialMarqueeCards from "@/components/sections/testimonial/TestimonialMarqueeCards";
-import FooterSimple from "@/components/sections/footer/FooterSimple";
 
 export default function Home2Page() {
   return (
-    <div className="min-h-screen bg-background text-foreground flex flex-col">
-      <NavbarCentered
-        logo="Home 2"
-        navItems={routes.map((r) => ({ name: r.label, href: r.path }))}
-        ctaButton={{ text: "Get Started", href: "/contact" }}
-      />
-
+    <div className="min-h-svh bg-background text-foreground flex flex-col">
       <main className="flex-grow">
         <HeroSplit
-          tag="Welcome to Home 2"
-          title="Build faster with our new platform"
-          description="The ultimate tool for modern teams to collaborate and ship products at lightning speed. Experience the next generation of workflow management."
-          primaryButton={{ text: "Start for free", href: "/contact" }}
-          secondaryButton={{ text: "Book a demo", href: "/about" }}
-          imageSrc="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+          tag="United Team Dispatch"
+          title="Reliable Amazon Relay Dispatch Services"
+          description="Maximize your earnings and minimize downtime. Our professional dispatchers handle the load management so you can focus on driving."
+          primaryButton={{ text: "Get Started", href: "#contact" }}
+          secondaryButton={{ text: "Learn More", href: "#about" }}
+          imageSrc="https://picsum.photos/seed/921821162/1200/800"
           textAnimation="slide-up"
         />
 
         <FeaturesMediaGrid
-          tag="Features"
-          title="Everything you need to scale"
-          description="Powerful features designed to help you grow your business without the growing pains."
+          tag="Our Services"
+          title="Everything you need to keep moving"
+          description="Comprehensive dispatch solutions tailored for Amazon Relay carriers across the United States."
           textAnimation="fade-blur"
           items={[
             {
-              title: "Real-time Collaboration",
-              description: "Work together with your team in real-time, no matter where they are located.",
-              imageSrc: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80"
+              title: "24/7 Load Booking",
+              description: "Our team works around the clock to secure the best loads and keep your trucks moving without interruption.",
+              imageSrc: "https://picsum.photos/seed/1998908035/1200/800"
             },
             {
-              title: "Advanced Analytics",
-              description: "Get deep insights into your performance with our comprehensive analytics dashboard.",
-              imageSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80"
+              title: "Route Optimization",
+              description: "We plan the most efficient routes to maximize your profitability and reduce empty miles.",
+              imageSrc: "https://picsum.photos/seed/1455271756/1200/800"
             },
             {
-              title: "Automated Workflows",
-              description: "Save time by automating repetitive tasks and focusing on what truly matters.",
-              imageSrc: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
+              title: "Dedicated Support",
+              description: "Get a dedicated dispatcher who understands your preferences and business goals.",
+              imageSrc: "https://picsum.photos/seed/1738517660/1200/800"
             },
             {
-              title: "Bank-grade Security",
-              description: "Rest easy knowing your data is protected by enterprise-level security protocols.",
-              imageSrc: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80"
+              title: "Performance Tracking",
+              description: "Detailed analytics and reporting to help you track your earnings and fleet performance.",
+              imageSrc: "https://picsum.photos/seed/921311085/1200/800"
             }
           ]}
         />
 
         <TestimonialMarqueeCards
-          tag="Testimonials"
-          title="Loved by innovative teams"
-          description="See what our customers have to say about their experience building with us."
+          tag="Carrier Success"
+          title="Trusted by carriers nationwide"
+          description="See what our partners have to say about working with United Team."
           textAnimation="slide-up"
           testimonials={[
             {
-              name: "Sarah Jenkins",
-              role: "CTO at TechCorp",
-              quote: "This platform has completely transformed how our engineering team operates. We ship 3x faster now.",
-              imageSrc: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80"
+              name: "James Wilson",
+              role: "Owner Operator",
+              quote: "Since partnering with United Team, my gross revenue has increased by 30%. They handle all the Amazon Relay headaches.",
+              imageSrc: "https://picsum.photos/seed/890099658/1200/800"
             },
             {
-              name: "Michael Chen",
-              role: "Product Manager",
-              quote: "The analytics features alone are worth the investment. It gives us clarity we never had before.",
-              imageSrc: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80"
+              name: "Robert Martinez",
+              role: "Fleet Owner",
+              quote: "The 24/7 support is incredible. Whenever my drivers have an issue at a facility, the dispatch team resolves it immediately.",
+              imageSrc: "https://picsum.photos/seed/937687634/1200/800"
             },
             {
-              name: "Elena Rodriguez",
-              role: "Design Lead",
-              quote: "Finally, a tool that understands the balance between powerful features and an intuitive interface.",
-              imageSrc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=80"
+              name: "Sarah Thompson",
+              role: "Logistics Manager",
+              quote: "Their route optimization has significantly reduced our deadhead miles. Highly recommend their services.",
+              imageSrc: "https://picsum.photos/seed/1647443482/1200/800"
             },
             {
-              name: "David Smith",
-              role: "Founder",
-              quote: "We evaluated dozens of solutions, and this was by far the most comprehensive and reliable.",
-              imageSrc: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
+              name: "David Chen",
+              role: "Independent Carrier",
+              quote: "Professional, reliable, and always looking out for my best interests. The best dispatch service I've used.",
+              imageSrc: "https://picsum.photos/seed/491708269/1200/800"
             }
           ]}
         />
       </main>
-
-      <FooterSimple
-        brand="Home 2"
-        copyright="© 2024 Home 2 Inc. All rights reserved."
-        columns={[
-          {
-            title: "Product",
-            items: [
-              { label: "Features", href: "#" },
-              { label: "Pricing", href: "#" },
-              { label: "Changelog", href: "#" }
-            ]
-          },
-          {
-            title: "Company",
-            items: [
-              { label: "About", href: "/about" },
-              { label: "Careers", href: "#" },
-              { label: "Contact", href: "/contact" }
-            ]
-          }
-        ]}
-        links={[
-          { label: "Privacy Policy", href: "#" },
-          { label: "Terms of Service", href: "#" }
-        ]}
-      />
     </div>
   );
 }
