@@ -83,6 +83,10 @@ export default function Layout() {
           icon: Send,
           href: "https://t.me/un1tedteam",
         },
+        {
+          icon: MessageCircle,
+          href: "https://wa.me/UT1TemurIsmatov",
+        },
       ]}
     />
       </SectionErrorBoundary>
