@@ -38,6 +38,10 @@ export const useButtonClick = (href?: string, onClick?: () => void) => {
         // Let browser handle mailto:/tel: naturally
         onClick?.();
         return;
+      } else if (href === "#contact-modal") {
+        e?.preventDefault();
+        window.dispatchEvent(new CustomEvent('open-contact-modal'));
+        return;
       } else if (href.startsWith("/")) {
         e?.preventDefault();
         const [path, hash] = href.split("#");

@@ -15,11 +15,11 @@ export default function HeroSection(): React.JSX.Element {
           description="United Team provides reliable 24/7 Amazon Relay dispatch services, helping carriers and owner-operators maximize revenue through strategic load planning, route optimization, rate negotiation, and dedicated support."
           primaryButton={{
             text: "Get Started",
-            href: "#contact",
+            href: "#contact-modal",
           }}
           secondaryButton={{
             text: "Contact Us",
-            href: "#contact",
+            href: "#contact-modal",
           }}
           imageSrc="http://img.b2bpic.net/free-photo/call-center-senior-agent-providing-guidance-help-customers-using-ai_482257-126049.jpg"
           textAnimation="slide-up"
