@@ -7,20 +7,20 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const metrics = [
   {
-    value: "$8,468",
-    description: "Weekly Revenue"
+    value: "30+",
+    description: "Professional Dispatchers"
   },
   {
-    value: "$8,564",
+    value: "$9,999",
     description: "Avg. Per Truck"
   },
   {
-    value: "$8,468",
-    description: "Weekly Revenue"
+    value: "30+",
+    description: "Professional Dispatchers"
   },
   {
-    value: "30+",
-    description: "Weekly Revenue"
+    value: "16 ",
+    description: "Professional Dispatchers"
   }
 ];
 
