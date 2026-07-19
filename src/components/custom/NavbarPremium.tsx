@@ -17,7 +17,7 @@ export default function NavbarPremium({ logoImageSrc, navItems, ctaButton }: Nav
   const [currentLang, setCurrentLang] = useState("EN");
 
   const languages = [
-    { code: "EN", label: "English", flag: "🇬🇧" },
+    { code: "EN", label: "English", flag: "🇺🇸" },
     { code: "RU", label: "Русский", flag: "🇷🇺" },
     { code: "UZ", label: "O'zbek", flag: "🇺🇿" },
   ];
