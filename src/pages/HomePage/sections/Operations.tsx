@@ -7,7 +7,7 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const metrics = [
   {
-    value: "30+",
+    value: "$99,999",
     description: "Active Drivers"
   },
   {
@@ -15,7 +15,7 @@ const metrics = [
     description: "Avg. Per Truck"
   },
   {
-    value: "30+",
+    value: "$99,999",
     description: "Active Drivers"
   },
   {
