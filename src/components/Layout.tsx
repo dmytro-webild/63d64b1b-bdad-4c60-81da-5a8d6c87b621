@@ -2,10 +2,9 @@ import FooterMinimal from '@/components/sections/footer/FooterMinimal';
 import NavbarFloatingLogo from '@/components/ui/NavbarFloatingLogo';
 import SectionErrorBoundary from "@/components/ui/SectionErrorBoundary";
 import SiteBackgroundSlot from "@/components/ui/SiteBackgroundSlot";
-import { Instagram, Send, Mail, Phone, MapPin, Clock, MessageCircle } from "lucide-react";
+import { Instagram, Send } from "lucide-react";
 import { Outlet } from 'react-router-dom';
 import { StyleProvider } from "@/components/ui/StyleProvider";
-import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function Layout() {
   const navItems = [
@@ -72,107 +71,40 @@ export default function Layout() {
         <Outlet />
       </main>
       <SectionErrorBoundary name="footer">
-        <footer data-section="footer" aria-label="Site footer" className="relative w-full bg-background overflow-hidden">
-          <div className="w-content-width mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-              
-              {/* Column 1: About */}
-              <ScrollReveal variant="slide-up" delay={0.1} className="flex flex-col">
-                <h3 className="font-bold text-2xl mb-6 text-foreground">United Team</h3>
-                <p className="text-accent mb-8 leading-relaxed">
-                  Professional Amazon Relay Dispatch Services helping carriers maximize profits with experienced dispatchers, reliable communication, and 24/7 dispatch support across the United States.
-                </p>
-                <div className="flex items-center gap-4">
-                  <a href="https://instagram.com/ut_logistics" className="flex items-center justify-center size-10 rounded-full bg-card shadow-sm text-foreground hover:bg-primary-cta hover:text-primary-cta-text hover:scale-110 transition-all duration-300">
-                    <Instagram className="size-5" />
-                  </a>
-                  <a href="https://t.me/un1tedteam" className="flex items-center justify-center size-10 rounded-full bg-card shadow-sm text-foreground hover:bg-primary-cta hover:text-primary-cta-text hover:scale-110 transition-all duration-300">
-                    <Send className="size-5" />
-                  </a>
-                  <a href="https://wa.me/15136534606" className="flex items-center justify-center size-10 rounded-full bg-card shadow-sm text-foreground hover:bg-primary-cta hover:text-primary-cta-text hover:scale-110 transition-all duration-300">
-                    <MessageCircle className="size-5" />
-                  </a>
-                </div>
-              </ScrollReveal>
-
-              {/* Column 2: Quick Links */}
-              <ScrollReveal variant="slide-up" delay={0.2} className="flex flex-col">
-                <h3 className="font-bold text-xl mb-6 text-foreground">Quick Links</h3>
-                <ul className="flex flex-col gap-4">
-                  {['Home', 'About', 'Services', 'Why Choose Us', 'FAQ', 'Contact'].map((link) => (
-                    <li key={link}>
-                      <a href={`#${link.toLowerCase().replace(/ /g, '-')}`} className="text-accent hover:text-primary-cta hover:translate-x-1 transition-all duration-300 inline-block">
-                        {link}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </ScrollReveal>
-
-              {/* Column 3: Contact */}
-              <ScrollReveal variant="slide-up" delay={0.3} className="flex flex-col">
-                <h3 className="font-bold text-xl mb-6 text-foreground">Contact</h3>
-                <ul className="flex flex-col gap-5">
-                  <li>
-                    <a href="mailto:uniteddispatch24@gmail.com" className="flex items-start gap-3 text-accent hover:text-primary-cta transition-colors duration-300 group">
-                      <Mail className="size-5 mt-0.5 group-hover:scale-110 transition-transform duration-300" />
-                      <span>uniteddispatch24@gmail.com</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="tel:+15136534606" className="flex items-start gap-3 text-accent hover:text-primary-cta transition-colors duration-300 group">
-                      <Phone className="size-5 mt-0.5 group-hover:scale-110 transition-transform duration-300" />
-                      <span>+1 (513) 653-4606</span>
-                    </a>
-                  </li>
-                  <li className="flex items-start gap-3 text-accent">
-                    <MapPin className="size-5 mt-0.5 shrink-0" />
-                    <span>Dagbitskiy Street<br/>Samarkand, Uzbekistan</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-accent">
-                    <Clock className="size-5 mt-0.5 shrink-0" />
-                    <span>Available 24/7</span>
-                  </li>
-                </ul>
-              </ScrollReveal>
-
-              {/* Column 4: Office Location */}
-              <ScrollReveal variant="slide-up" delay={0.4} className="flex flex-col">
-                <h3 className="font-bold text-xl mb-6 text-foreground">Office</h3>
-                <a href="https://maps.app.goo.gl/SxVepsSyJfRCzcNH7" target="_blank" rel="noopener noreferrer" className="block w-full h-[220px] rounded-theme overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 mb-4 relative group">
-                  <iframe 
-                    src="https://maps.google.com/maps?q=Dagbitskiy+Street,+Samarkand,+Uzbekistan&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-                    width="100%" 
-                    height="100%" 
-                    style={{ border: 0 }} 
-                    allowFullScreen={false} 
-                    loading="lazy" 
-                    referrerPolicy="no-referrer-when-downgrade"
-                    className="pointer-events-none group-hover:opacity-90 transition-opacity duration-300"
-                  ></iframe>
-                  <div className="absolute inset-0 bg-transparent cursor-pointer"></div>
-                </a>
-                <div className="text-accent">
-                  <p className="font-semibold text-foreground mb-1">Head Office</p>
-                  <p>Dagbitskiy Street</p>
-                  <p>Samarkand, Uzbekistan</p>
-                </div>
-              </ScrollReveal>
-
-            </div>
-
-            {/* Bottom Bar */}
-            <ScrollReveal 
-              variant="fade" 
-              delay={0.6} 
-              className="pt-8 border-t border-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4"
-            >
-              <p className="text-accent text-sm">© 2026 United Team. All Rights Reserved.</p>
-              <div className="flex items-center gap-6 text-sm text-accent">
-                <a href="#" className="hover:text-primary-cta transition-colors duration-300">Privacy Policy</a>
-                <a href="#" className="hover:text-primary-cta transition-colors duration-300">Terms of Service</a>
+        <footer data-section="footer" aria-label="Site footer" className="relative w-full py-20">
+          <div className="flex flex-col w-content-width mx-auto px-10 pb-5 rounded-lg card">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10 mt-10">
+              <div>
+                <h3 className="font-bold text-lg mb-4">United Team</h3>
+                <p className="text-accent">Amazon Relay Dispatch Services</p>
               </div>
-            </ScrollReveal>
+              <div>
+                <h3 className="font-bold text-lg mb-4">Head Office</h3>
+                <p className="text-accent">Dagbitskiy Street</p>
+                <p className="text-accent">Samarqand, Uzbekistan</p>
+              </div>
+              <div>
+                <h3 className="font-bold text-lg mb-4">Contact</h3>
+                <p className="text-accent">Email: uniteddispatch24@gmail.com</p>
+                <p className="text-accent">Phone: +1 (513) 653-4606</p>
+                <p className="text-accent">Instagram: @ut_logistics</p>
+                <p className="text-accent">Telegram: @un1tedteam</p>
+                <p className="text-accent">WhatsApp: @UT1TemurIsmatov</p>
+              </div>
+            </div>
+            <div className="font-semibold py-5 text-center text-4xl md:text-6xl lg:text-8xl">United Team © 2026</div>
+            <div className="h-px w-full mb-5 bg-foreground/50" />
+            <div className="flex flex-col gap-3 items-center justify-between md:flex-row">
+              <span className="text-base opacity-75">All Rights Reserved</span>
+              <div className="flex items-center gap-3">
+                <a href="https://instagram.com" className="flex items-center justify-center size-10 rounded-full primary-button text-primary-cta-text cursor-pointer">
+                  <Instagram className="size-4" strokeWidth={1.5} />
+                </a>
+                <a href="https://t.me/un1tedteam" className="flex items-center justify-center size-10 rounded-full primary-button text-primary-cta-text cursor-pointer">
+                  <Send className="size-4" strokeWidth={1.5} />
+                </a>
+              </div>
+            </div>
           </div>
         </footer>
       </SectionErrorBoundary>
