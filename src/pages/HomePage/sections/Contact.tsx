@@ -14,11 +14,11 @@ export default function ContactSection(): React.JSX.Element {
           text="Ready to scale your fleet operations?"
           primaryButton={{
             text: "Contact Us",
-            href: "#contact",
+            href: "#contact-modal",
           }}
           secondaryButton={{
             text: "Get Started",
-            href: "#contact",
+            href: "#contact-modal",
           }}
           textAnimation="slide-up"
         />
