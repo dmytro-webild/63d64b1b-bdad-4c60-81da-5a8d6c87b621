@@ -36,7 +36,9 @@ export default function Layout() {
   {
     "name": "Contact",
     "href": "#contact"
-  }
+  },
+  { name: "Home Russian", href: "/home-russian" },
+
 ];
 
   return (
