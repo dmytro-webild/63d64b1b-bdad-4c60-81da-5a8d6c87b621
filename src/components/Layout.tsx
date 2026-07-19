@@ -5,7 +5,7 @@ import SiteBackgroundSlot from "@/components/ui/SiteBackgroundSlot";
 import { Instagram, Send, Mail, Phone, MapPin, Clock, MessageCircle } from "lucide-react";
 import { Outlet } from 'react-router-dom';
 import { StyleProvider } from "@/components/ui/StyleProvider";
-import { motion } from "framer-motion";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function Layout() {
   const navItems = [
@@ -72,18 +72,12 @@ export default function Layout() {
         <Outlet />
       </main>
       <SectionErrorBoundary name="footer">
-        <footer data-section="footer" aria-label="Site footer" className="relative w-full py-20 bg-background overflow-hidden">
+        <footer data-section="footer" aria-label="Site footer" className="relative w-full bg-background overflow-hidden">
           <div className="w-content-width mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
               
               {/* Column 1: About */}
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="flex flex-col"
-              >
+              <ScrollReveal variant="slide-up" delay={0.1} className="flex flex-col">
                 <h3 className="font-bold text-2xl mb-6 text-foreground">United Team</h3>
                 <p className="text-accent mb-8 leading-relaxed">
                   Professional Amazon Relay Dispatch Services helping carriers maximize profits with experienced dispatchers, reliable communication, and 24/7 dispatch support across the United States.
@@ -99,16 +93,10 @@ export default function Layout() {
                     <MessageCircle className="size-5" />
                   </a>
                 </div>
-              </motion.div>
+              </ScrollReveal>
 
               {/* Column 2: Quick Links */}
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="flex flex-col"
-              >
+              <ScrollReveal variant="slide-up" delay={0.2} className="flex flex-col">
                 <h3 className="font-bold text-xl mb-6 text-foreground">Quick Links</h3>
                 <ul className="flex flex-col gap-4">
                   {['Home', 'About', 'Services', 'Why Choose Us', 'FAQ', 'Contact'].map((link) => (
@@ -119,16 +107,10 @@ export default function Layout() {
                     </li>
                   ))}
                 </ul>
-              </motion.div>
+              </ScrollReveal>
 
               {/* Column 3: Contact */}
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="flex flex-col"
-              >
+              <ScrollReveal variant="slide-up" delay={0.3} className="flex flex-col">
                 <h3 className="font-bold text-xl mb-6 text-foreground">Contact</h3>
                 <ul className="flex flex-col gap-5">
                   <li>
@@ -152,18 +134,12 @@ export default function Layout() {
                     <span>Available 24/7</span>
                   </li>
                 </ul>
-              </motion.div>
+              </ScrollReveal>
 
               {/* Column 4: Office Location */}
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="flex flex-col"
-              >
+              <ScrollReveal variant="slide-up" delay={0.4} className="flex flex-col">
                 <h3 className="font-bold text-xl mb-6 text-foreground">Office</h3>
-                <a href="https://maps.app.goo.gl/SxVepsSyJfRCzcNH7" target="_blank" rel="noopener noreferrer" className="block w-full h-[220px] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 mb-4 relative group">
+                <a href="https://maps.app.goo.gl/SxVepsSyJfRCzcNH7" target="_blank" rel="noopener noreferrer" className="block w-full h-[220px] rounded-theme overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 mb-4 relative group">
                   <iframe 
                     src="https://maps.google.com/maps?q=Dagbitskiy+Street,+Samarkand,+Uzbekistan&t=&z=15&ie=UTF8&iwloc=&output=embed" 
                     width="100%" 
@@ -181,16 +157,14 @@ export default function Layout() {
                   <p>Dagbitskiy Street</p>
                   <p>Samarkand, Uzbekistan</p>
                 </div>
-              </motion.div>
+              </ScrollReveal>
 
             </div>
 
             {/* Bottom Bar */}
-            <motion.div 
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.6 }}
+            <ScrollReveal 
+              variant="fade" 
+              delay={0.6} 
               className="pt-8 border-t border-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4"
             >
               <p className="text-accent text-sm">© 2026 United Team. All Rights Reserved.</p>
@@ -198,7 +172,7 @@ export default function Layout() {
                 <a href="#" className="hover:text-primary-cta transition-colors duration-300">Privacy Policy</a>
                 <a href="#" className="hover:text-primary-cta transition-colors duration-300">Terms of Service</a>
               </div>
-            </motion.div>
+            </ScrollReveal>
           </div>
         </footer>
       </SectionErrorBoundary>
